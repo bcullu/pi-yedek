@@ -4,12 +4,18 @@
 <style>body{font:16px/1.6 system-ui,sans-serif;max-width:40rem;margin:2rem auto;padding:0 1rem;color:#222;background:#fff}a{color:#0b5cad}</style></head>
 <body>
 <h1>Privacy policy</h1>
-<p>pi-yedek is used only by its owner, to back up the owner's own data to the owner's own Google Drive account.</p>
+<p>pi-yedek is a personal tool used only by its owner, with the owner's own Google account. It is not offered to anyone else.</p>
+<h2>What it accesses</h2>
 <ul>
-<li>It requests only the <code>drive.file</code> scope, so it can access only files it has created itself.</li>
-<li>Data is encrypted on the owner's own computer before upload. Google and any third party see only encrypted data.</li>
-<li>Access tokens are stored only on the owner's own computer. No data is sent to, shared with, or sold to anyone else.</li>
-<li>No analytics, advertising or tracking is used.</li>
+<li><code>drive.file</code>: to create and manage the backup files it uploads itself. It cannot see other files through this permission.</li>
+<li><code>drive.readonly</code>: to download the owner's own files from Google Drive to the owner's own storage. It does not change or delete anything through this permission.</li>
 </ul>
-<p>Questions: open an issue in the <a href="https://github.com/bcullu/pi-yedek">GitHub repository</a>.</p>
+<h2>How data is handled</h2>
+<ul>
+<li>Backups are encrypted on the owner's own device before upload. Google sees only encrypted data.</li>
+<li>Access tokens are kept only on the owner's own devices.</li>
+<li>No data is sent to, shared with, or sold to any third party. No analytics, advertising or tracking.</li>
+<li>Access can be revoked at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>; files created by the tool can then be deleted from Google Drive.</li>
+</ul>
+<p>Contact: <a href="https://github.com/bcullu">github.com/bcullu</a></p>
 </body></html>
